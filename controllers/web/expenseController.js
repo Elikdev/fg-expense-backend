@@ -1,4 +1,5 @@
-/**
- * export.method = req, res function
- * 
- */
+const Expense = require('../../models/expense');
+
+exports.getAllExpenses = (req, res) => {};
+
+exports.getSingleExpense = (req, res) => {};

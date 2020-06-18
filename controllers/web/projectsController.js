@@ -1,18 +1,5 @@
-const Project = require("../../models/Project");
+const Project = require('../../models/Project');
 
-const getAllProjects = async (req, res, next) => {
-  try {
-    let allProjects = await Project.find()
-      .populate("company", "_id", "name")
-      .populate("mda", "_id", "name")
-      .populate("Expense");
+exports.getAllProject = (req, res) => {};
 
-    return res.json(allProjects);
-  } catch (err) {
-    return next(err);
-  }
-};
-
-module.exports = {
-  getAllProjects,
-};
+exports.singleProject = (req, res) => {};
